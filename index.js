@@ -7,7 +7,7 @@ import {
 } from './middleware/error.handlers.js';
 import cors from 'cors';
 const app = Express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.use(Express.json());
 
 const whiteList = [
